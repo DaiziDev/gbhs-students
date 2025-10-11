@@ -1,0 +1,60 @@
+@import "tailwindcss";
+@import "tailwindcss/preflight";
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+}
+:root {
+  --primary: black;
+  --bg-color: #ffffff;
+}
+.dark-mode {
+  --bg-color: #181818;
+  --primary: white;
+}
+
+.nav-animation {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  animation: animate 0.6s ease-in forwards;
+}
+@keyframes animate {
+  to {
+    top: 70px;
+    opacity: 1;
+  }
+}
+
+.hero h1{
+    font-family: "Sansita";
+    font-weight: bold;
+}
+.hero button{
+    border: 1px solid rgba(255, 255, 255, 0.39);
+    margin-top: 60px;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+}
+.hero button::after{
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: -30px;
+    z-index: -1;
+    width: 0%;
+    height: 210%;
+    transform: rotate(-15deg);
+    background-color: rgb(62, 169, 211);
+    transition: all 0.5s ease;
+}
+.hero button:hover::after{
+    width: 110%;
+}

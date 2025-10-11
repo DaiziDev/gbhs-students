@@ -1,0 +1,23 @@
+{
+  "homepage": "https://github.com/DaiziDev/gbhs-students.git",
+  "name": "class2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build" : "npx @tailwindcss/cli -i ./src/input.css -o ./build/output.css",
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./output.css --watch",
+    "predebloy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.14",
+    "tailwindcss": "^4.1.14"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}

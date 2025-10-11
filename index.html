@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html class="dark-mode" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Here working on the navbar -->
+    <section class="w-full h-20 flex items-center justify-center">
+      <div
+        class="w-[98%] h-20 bg-[var(--bg-color)] text-[var(--primary)] flex items-center justify-between z-20 fixed"
+      >
+        <div class="logo">GBHS-Koutaba</div>
+
+        <div class="nav-element">
+          <!-- small screen -->
+          <nav
+            class="small-screen mt-5 hidden bg-[var(--bg-color)] text-[var(--primary)] h-[10vh] w-[100%] absolute left-0 top-20 transition-all duration-500"
+          >
+            <ul>
+              <li>
+                <a href="#home">Home</a>
+              </li>
+              <li>
+                <a href="#classmates">Classmates</a>
+              </li>
+              <li>
+                <a href="#teacher">Teachers</a>
+              </li>
+              <li>
+                <a href="about">About</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- bigger screen -->
+          <nav class="bigger-screen">
+            <ul class="hidden sm:flex gap-4">
+              <li>
+                <a href="#home">Home</a>
+              </li>
+              <li>
+                <a href="#classmates">Classmates</a>
+              </li>
+              <li>
+                <a href="#teacher">Teachers</a>
+              </li>
+              <li>
+                <a href="about">About</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="flex">
+          <div
+            class="dark-mood relative h-10 w-10 flex items-center justify-center text-2xl cursor-pointer hover:scale-125 transition duration-500"
+          >
+            <i class="fa-solid fa-moon absolute"></i>
+          </div>
+          <div
+            id="menu"
+            class="relative sm:hidden h-10 w-10 flex items-center justify-center text-2xl cursor-pointer hover:scale-130 hover:rotate-180 transition-all duration-500"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of the navbar -->
+    <section class="hero flex items-center justify-center w-full">
+      <div
+        class="w-[98%] bg-[url('https://res.cloudinary.com/dlhevtzle/image/upload/v1760139674/rp8jxqkv78rwzqr6nitv.jpg')] bg-center bg-no-repeat bg-cover h-[calc(100vh-80px)] flex flex-col items-center justify-center text-center"
+      >
+        <div
+          class="hero w-full h-full backdrop-brightness-50 text-white flex flex-col items-center justify-center text-4xl"
+        >
+          <h1 class="text-9xl mb-15">GBHS-Koutaba</h1>
+          <p class="text-center">
+            Discover and connect with your <br> classmates building networks that
+            last a lifetime
+          </p>
+          <button>View Classmates</button>
+        </div>
+      </div>
+    </section>
+    <!-- End of the hero section-->
+     <section class="w-full flex fle-col items-center justify-center">
+       <div class="w-[90%] h-full">
+
+         <div class="search flex flex-col items-center justify-center">
+           <h1 class="font-bold text-4xl">Our Classmates</h1>
+           <p>
+             Meet those talented yams who make up our life journey in lycée especially upper and lowersixth
+           </p>
+           <div class="search relative border p-2">
+             <input class="border rounded w-20" type="search" placeholder="Search Classmates">
+             <i class="fa-solid fa-glass absolute left-1 top-1"></i>
+           </div>
+         </div>
+
+         <div class="classmates">
+           <div class="box1 h-[100px] w-[100px] border "></div>
+         </div>
+
+       </div>
+     </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
