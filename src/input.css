@@ -9,10 +9,12 @@
 :root {
   --primary: black;
   --bg-color: #ffffff;
+    --shadow: rgba(0,0,0,0.3);
 }
 .dark-mode {
   --bg-color: #181818;
   --primary: white;
+  --shadow: rgba(189, 189, 189, 0.3);
 }
 
 .nav-animation {
@@ -81,63 +83,94 @@
 .hero button:hover::after{
     width: 110%;
 }
-
-section .search input:focus{
-  border: 2px solid #0eabe9;
-  outline: #0eabe9;
-}
-section .search input:focus + .fa-solid{
-  color: #0eabe9;
-}
-section .classmates{
+/* Classmates Section Start Here */
+#classmates-container {
   display: grid;
-  gap: 30px;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 1rem;
 }
-section .classmates h1{
-    font-family: "Sansita";
-    font-weight: bold;
+.classmate {
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 2px 2px 5px var(--shadow);
+  transition: all 0.3s ease-in-out;
 }
-/* @media screen and (max-width: 455px) {
-  section .classmates .box1 .info{
-    background-color: green;
-    gap: 5p;
-  }
-} */
-@media screen and (min-width: 455px) {
-  section .classmates {
-    display: grid;
+.classmate:hover{
+  transform: scale(1.1);
+}
+
+.boxDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-container {
+  border: 2px solid #999;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+.classmate-img {
+  height: 100%;
+  width: 100%;
+  object-position: top;
+  object-fit: cover;
+}
+
+.classmate-name {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-family: Sansita;
+}
+
+.classmate-text {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.classmate-span {
+  color: #0eabe9;
+  font-style: italic;
+}
+
+.classmate-info {
+  display: flex;
+  font-size: 50px;
+  flex-direction: row;
+  font-size: 0.85rem;
+  gap: 0.5rem;
+}
+.classmate-link{
+  background-color: #0eabe9;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 5px 20px 5px 20px;
+}
+
+@media (min-width: 10px) and (max-width: 500px){
+  #classmates-container{
     grid-template-columns: 1fr;
-    width: 90%;
   }
 }
-@media screen and (min-width: 626px) {
-  section .classmates {
-    grid-template-columns: 1fr;
-    width: 75%;
-  }
-}
-@media screen and (min-width: 780px) {
-  section .classmates {
+@media (min-width: 501px) and (max-width: 900px){
+  #classmates-container{
     grid-template-columns: 1fr 1fr;
-    width: 95%;
   }
 }
-@media screen and (min-width: 1090px) {
-  section .classmates {
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
+@media (min-width: 900px) and (max-width: 1500px){
+  #classmates-container{
+    width: 92%;
   }
 }
-@media screen and (min-width: 1375px) {
-  section .classmates {
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 90%;
-  }
-}
-@media screen and (min-width: 1600px) {
-  section .classmates {
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 85%;
+@media screen and (min-width: 1599px){
+  #classmates-container{
+    width: 75%;
   }
 }
