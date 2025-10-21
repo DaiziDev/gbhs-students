@@ -30,6 +30,3 @@ darkmood.addEventListener("click", function() {
         html.classList.remove("dark-mode")
     }
 })
-
-const apiKey = "222535634254612"
-const apiSecret = "6NwGWdKyVPzfWB2IErHmhnVjC7M"

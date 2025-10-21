@@ -1,11 +1,10 @@
 @import "tailwindcss";
-@import "tailwindcss/preflight";
-@tailwind utilities;
 
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
+  scroll-behavior: smooth;
 }
 :root {
   --primary: black;
@@ -27,6 +26,30 @@
     top: 70px;
     opacity: 1;
   }
+}
+
+.nav-li {
+  @apply cursor-pointer uppercase font-bold;
+  position: relative;
+}
+.nav-li::after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: inline-block;
+  width: 0;
+  height: 2px;
+  background-color: #0eabe9;
+  transition: width 0.3s ease;
+}
+.nav-li:hover {
+  transition: 0.3s ease;
+  transform: translateY(-10px);
+}
+.nav-li:hover::after {
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .hero h1{
@@ -52,9 +75,69 @@
     width: 0%;
     height: 210%;
     transform: rotate(-15deg);
-    background-color: rgb(62, 169, 211);
+    background-color: #0eabe9;
     transition: all 0.5s ease;
 }
 .hero button:hover::after{
     width: 110%;
+}
+
+section .search input:focus{
+  border: 2px solid #0eabe9;
+  outline: #0eabe9;
+}
+section .search input:focus + .fa-solid{
+  color: #0eabe9;
+}
+section .classmates{
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr;
+}
+section .classmates h1{
+    font-family: "Sansita";
+    font-weight: bold;
+}
+/* @media screen and (max-width: 455px) {
+  section .classmates .box1 .info{
+    background-color: green;
+    gap: 5p;
+  }
+} */
+@media screen and (min-width: 455px) {
+  section .classmates {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+}
+@media screen and (min-width: 626px) {
+  section .classmates {
+    grid-template-columns: 1fr;
+    width: 75%;
+  }
+}
+@media screen and (min-width: 780px) {
+  section .classmates {
+    grid-template-columns: 1fr 1fr;
+    width: 95%;
+  }
+}
+@media screen and (min-width: 1090px) {
+  section .classmates {
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1375px) {
+  section .classmates {
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  section .classmates {
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 85%;
+  }
 }

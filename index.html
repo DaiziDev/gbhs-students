@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="dark-mode" lang="en">
+<html class="dark-m" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,7 +21,7 @@
   </head>
   <body>
     <!-- Here working on the navbar -->
-    <section class="w-full h-20 flex items-center justify-center">
+    <section id="home" class="w-full h-20 flex items-center justify-center">
       <div
         class="w-[98%] h-20 bg-[var(--bg-color)] text-[var(--primary)] flex items-center justify-between z-20 fixed"
       >
@@ -30,19 +30,19 @@
         <div class="nav-element">
           <!-- small screen -->
           <nav
-            class="small-screen mt-5 hidden bg-[var(--bg-color)] text-[var(--primary)] h-[10vh] w-[100%] absolute left-0 top-20 transition-all duration-500"
+            class="small-screen hidden bg-[var(--bg-color)] text-[var(--primary)] w-[100%] absolute left-0 transition-all duration-500"
           >
-            <ul>
-              <li>
+            <ul class="flex flex-col gap-4 justify-between">
+              <li class="nav-li">
                 <a href="#home">Home</a>
               </li>
-              <li>
+              <li class="nav-li">
                 <a href="#classmates">Classmates</a>
               </li>
-              <li>
+              <li class="nav-li">
                 <a href="#teacher">Teachers</a>
               </li>
-              <li>
+              <li class="nav-li">
                 <a href="about">About</a>
               </li>
             </ul>
@@ -50,16 +50,16 @@
           <!-- bigger screen -->
           <nav class="bigger-screen">
             <ul class="hidden sm:flex gap-4">
-              <li>
+              <li class="nav-li">
                 <a href="#home">Home</a>
               </li>
-              <li>
+              <li class="nav-li">
                 <a href="#classmates">Classmates</a>
               </li>
-              <li>
+              <li class="nav-li">
                 <a href="#teacher">Teachers</a>
               </li>
-              <li>
+              <li class="nav-li">
                 <a href="about">About</a>
               </li>
             </ul>
@@ -91,35 +91,345 @@
         >
           <h1 class="text-9xl mb-15">GBHS-Koutaba</h1>
           <p class="text-center">
-            Discover and connect with your <br> classmates building networks that
-            last a lifetime
+            Discover and connect with your <br />
+            classmates building networks that last a lifetime
           </p>
           <button>View Classmates</button>
         </div>
       </div>
     </section>
     <!-- End of the hero section-->
-     <section class="w-full flex fle-col items-center justify-center">
-       <div class="w-[90%] h-full">
+    <section
+      id="classmates"
+      class="w-full flex fle-col items-center justify-center bg-[var(--bg-color)] text-[var(--primary)]"
+    >
+      <div class="w-[98%] h-full">
+        <div class="search-container flex flex-col items-center justify-center">
+          <h1 class="font-bold text-5xl my-10">Our Classmates</h1>
+          <p class="text-2xl mb-6">
+            Meet those talented yams who make up our life journey in lycée magic
+            especially upper and lowersixth
+          </p>
+          <div class="search relative">
+            <input
+              class="border-[2px] rounded-[8px] w-70 h-9 pl-8"
+              type="search"
+              placeholder="Search Classmates"
+            />
+            <i
+              class="fa-solid fa-magnifying-glass absolute left-1 top-2.5 pointer-events-none"
+            ></i>
+          </div>
+        </div>
 
-         <div class="search flex flex-col items-center justify-center">
-           <h1 class="font-bold text-4xl">Our Classmates</h1>
-           <p>
-             Meet those talented yams who make up our life journey in lycée especially upper and lowersixth
-           </p>
-           <div class="search relative border p-2">
-             <input class="border rounded w-20" type="search" placeholder="Search Classmates">
-             <i class="fa-solid fa-glass absolute left-1 top-1"></i>
-           </div>
-         </div>
+        <div class="classmateC w-full flex items-center justify-center">
+          <div class="classmates w-full p-5 my-4">
+            <div
+              class="box1 border-2 p-2 rounded-2xl border-none shadow-xl/10 transition-all duration-700 hover:inset-shadow-sm hover:inset-shadow-sky-700 hover:-translate-2 flex flex-col items-center justify-center"
+            >
+              <div
+                class="image h-40 w-40 border-2 rounded-full overflow-hidden"
+              >
+                <img
+                  src="/src/img/amida1.jpg"
+                  class="w-full h-full object-cover object-top"
+                  alt=""
+                />
+              </div>
+              <h1 class="py-4 font-black">Amida Foche</h1>
+              <p class="text-center">
+                Comes early to school as if she was in her house, do all
+                assignment and never punished, too big to wash the class, love
+                only her book just like her bench mate love trouble. <br />
+                <span class="text-sky-600"
+                  >PS. "Mammy I swear" what will u swear with again.</span
+                >
+              </p>
+              <div
+                class="info flex flex-col sm:flex-row text-center gap-2.5 py-4"
+              >
+                <h1 class="font-bold">
+                  Age : <span class="font-light"> 20 </span>
+                </h1>
+                <h1 class="font-bold">
+                  Location : <span class="font-light"> Yaoundé </span>
+                </h1>
+                <h1 class="font-bold">
+                  <a
+                    href="https://wa.me/237696862783?text=Hello%20I%20want%20to%20contact%20you"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="border px-4 py-2 text-[13px] rounded border-none bg-sky-600 text-[var(--primary)]"
+                  >
+                    Contact
+                  </a>
+                </h1>
+              </div>
+            </div>
+<!-- 
+            <div
+              class="box1 border-2 p-2 rounded-2xl border-none shadow-xl/10 transition-all duration-700 hover:inset-shadow-sm hover:inset-shadow-sky-700 hover:-translate-2 flex flex-col items-center justify-center"
+            >
+              <div
+                class="image h-40 w-40 border-2 rounded-full overflow-hidden"
+              >
+                <img
+                  src="/src/img/amida1.jpg"
+                  class="w-full h-full object-cover object-top"
+                  alt=""
+                />
+              </div>
+              <h1 class="py-4 font-black">Amida Foche</h1>
+              <p class="text-center">
+                Comes early to school as if she was in her house, do all
+                assignment and never punished, too big to wash the class, love
+                only her book just like her bench mate love trouble. <br />
+                <span class="text-sky-600"
+                  >PS. "Mammy I swear" what will u swear with again.</span
+                >
+              </p>
+              <div
+                class="info flex flex-col sm:flex-row text-center gap-2.5 py-4"
+              >
+                <h1 class="font-bold">
+                  Age : <span class="font-light"> 20 </span>
+                </h1>
+                <h1 class="font-bold">
+                  Location : <span class="font-light"> Yaoundé </span>
+                </h1>
+                <h1 class="font-bold">
+                  <a
+                    href="https://wa.me/237696862783?text=Hello%20I%20want%20to%20contact%20you"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="border px-4 py-2 text-[13px] rounded border-none bg-sky-600 text-[var(--primary)]"
+                  >
+                    Contact
+                  </a>
+                </h1>
+              </div>
+            </div>
 
-         <div class="classmates">
-           <div class="box1 h-[100px] w-[100px] border "></div>
-         </div>
+            <div
+              class="box1 border-2 p-2 rounded-2xl border-none shadow-xl/10 transition-all duration-700 hover:inset-shadow-sm hover:inset-shadow-sky-700 hover:-translate-2 flex flex-col items-center justify-center"
+            >
+              <div
+                class="image h-40 w-40 border-2 rounded-full overflow-hidden"
+              >
+                <img
+                  src="/src/img/amida1.jpg"
+                  class="w-full h-full object-cover object-top"
+                  alt=""
+                />
+              </div>
+              <h1 class="py-4 font-black">Amida Foche</h1>
+              <p class="text-center">
+                Comes early to school as if she was in her house, do all
+                assignment and never punished, too big to wash the class, love
+                only her book just like her bench mate love trouble. <br />
+                <span class="text-sky-600"
+                  >PS. "Mammy I swear" what will u swear with again.</span
+                >
+              </p>
+              <div
+                class="info flex flex-col sm:flex-row text-center gap-2.5 py-4"
+              >
+                <h1 class="font-bold">
+                  Age : <span class="font-light"> 20 </span>
+                </h1>
+                <h1 class="font-bold">
+                  Location : <span class="font-light"> Yaoundé </span>
+                </h1>
+                <h1 class="font-bold">
+                  <a
+                    href="https://wa.me/237696862783?text=Hello%20I%20want%20to%20contact%20you"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="border px-4 py-2 text-[13px] rounded border-none bg-sky-600 text-[var(--primary)]"
+                  >
+                    Contact
+                  </a>
+                </h1>
+              </div>
+            </div>
 
-       </div>
-     </section>
+            <div
+              class="box1 border-2 p-2 rounded-2xl border-none shadow-xl/10 transition-all duration-700 hover:inset-shadow-sm hover:inset-shadow-sky-700 hover:-translate-2 flex flex-col items-center justify-center"
+            >
+              <div
+                class="image h-40 w-40 border-2 rounded-full overflow-hidden"
+              >
+                <img
+                  src="/src/img/amida1.jpg"
+                  class="w-full h-full object-cover object-top"
+                  alt=""
+                />
+              </div>
+              <h1 class="py-4 font-black">Amida Foche</h1>
+              <p class="text-center">
+                Comes early to school as if she was in her house, do all
+                assignment and never punished, too big to wash the class, love
+                only her book just like her bench mate love trouble. <br />
+                <span class="text-sky-600"
+                  >PS. "Mammy I swear" what will u swear with again.</span
+                >
+              </p>
+              <div
+                class="info flex flex-col sm:flex-row text-center gap-2.5 py-4"
+              >
+                <h1 class="font-bold">
+                  Age : <span class="font-light"> 20 </span>
+                </h1>
+                <h1 class="font-bold">
+                  Location : <span class="font-light"> Yaoundé </span>
+                </h1>
+                <h1 class="font-bold">
+                  <a
+                    href="https://wa.me/237696862783?text=Hello%20I%20want%20to%20contact%20you"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="border px-4 py-2 text-[13px] rounded border-none bg-sky-600 text-[var(--primary)]"
+                  >
+                    Contact
+                  </a>
+                </h1>
+              </div>
+            </div>
 
-    <script src="script.js"></script>
+            <div
+              class="box1 border-2 p-2 rounded-2xl border-none shadow-xl/10 transition-all duration-700 hover:inset-shadow-sm hover:inset-shadow-sky-700 hover:-translate-2 flex flex-col items-center justify-center"
+            >
+              <div
+                class="image h-40 w-40 border-2 rounded-full overflow-hidden"
+              >
+                <img
+                  src="/src/img/amida1.jpg"
+                  class="w-full h-full object-cover object-top"
+                  alt=""
+                />
+              </div>
+              <h1 class="py-4 font-black">Amida Foche</h1>
+              <p class="text-center">
+                Comes early to school as if she was in her house, do all
+                assignment and never punished, too big to wash the class, love
+                only her book just like her bench mate love trouble. <br />
+                <span class="text-sky-600"
+                  >PS. "Mammy I swear" what will u swear with again.</span
+                >
+              </p>
+              <div
+                class="info flex flex-col sm:flex-row text-center gap-2.5 py-4"
+              >
+                <h1 class="font-bold">
+                  Age : <span class="font-light"> 20 </span>
+                </h1>
+                <h1 class="font-bold">
+                  Location : <span class="font-light"> Yaoundé </span>
+                </h1>
+                <h1 class="font-bold">
+                  <a
+                    href="https://wa.me/237696862783?text=Hello%20I%20want%20to%20contact%20you"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="border px-4 py-2 text-[13px] rounded border-none bg-sky-600 text-[var(--primary)]"
+                  >
+                    Contact
+                  </a>
+                </h1>
+              </div>
+            </div>
+
+            <div
+              class="box1 border-2 p-2 rounded-2xl border-none shadow-xl/10 transition-all duration-700 hover:inset-shadow-sm hover:inset-shadow-sky-700 hover:-translate-2 flex flex-col items-center justify-center"
+            >
+              <div
+                class="image h-40 w-40 border-2 rounded-full overflow-hidden"
+              >
+                <img
+                  src="/src/img/amida1.jpg"
+                  class="w-full h-full object-cover object-top"
+                  alt=""
+                />
+              </div>
+              <h1 class="py-4 font-black">Amida Foche</h1>
+              <p class="text-center">
+                Comes early to school as if she was in her house, do all
+                assignment and never punished, too big to wash the class, love
+                only her book just like her bench mate love trouble. <br />
+                <span class="text-sky-600"
+                  >PS. "Mammy I swear" what will u swear with again.</span
+                >
+              </p>
+              <div
+                class="info flex flex-col sm:flex-row text-center gap-2.5 py-4"
+              >
+                <h1 class="font-bold">
+                  Age : <span class="font-light"> 20 </span>
+                </h1>
+                <h1 class="font-bold">
+                  Location : <span class="font-light"> Yaoundé </span>
+                </h1>
+                <h1 class="font-bold">
+                  <a
+                    href="https://wa.me/237696862783?text=Hello%20I%20want%20to%20contact%20you"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="border px-4 py-2 text-[13px] rounded border-none bg-sky-600 text-[var(--primary)]"
+                  >
+                    Contact
+                  </a>
+                </h1>
+              </div>
+            </div>
+
+            <div
+              class="box1 border-2 p-2 rounded-2xl border-none shadow-xl/10 transition-all duration-700 hover:inset-shadow-sm hover:inset-shadow-sky-700 hover:-translate-2 flex flex-col items-center justify-center"
+            >
+              <div
+                class="image h-40 w-40 border-2 rounded-full overflow-hidden"
+              >
+                <img
+                  src="/src/img/amida1.jpg"
+                  class="w-full h-full object-cover object-top"
+                  alt=""
+                />
+              </div>
+              <h1 class="py-4 font-black">Amida Foche</h1>
+              <p class="text-center">
+                Comes early to school as if she was in her house, do all
+                assignment and never punished, too big to wash the class, love
+                only her book just like her bench mate love trouble. <br />
+                <span class="text-sky-600"
+                  >PS. "Mammy I swear" what will u swear with again.</span
+                >
+              </p>
+              <div
+                class="info flex flex-col sm:flex-row text-center gap-2.5 py-4"
+              >
+                <h1 class="font-bold">
+                  Age : <span class="font-light"> 20 </span>
+                </h1>
+                <h1 class="font-bold">
+                  Location : <span class="font-light"> Yaoundé </span>
+                </h1>
+                <h1 class="font-bold">
+                  <a
+                    href="https://wa.me/237696862783?text=Hello%20I%20want%20to%20contact%20you"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="border px-4 py-2 text-[13px] rounded border-none bg-sky-600 text-[var(--primary)]"
+                  >
+                    Contact
+                  </a>
+                </h1>
+              </div>
+            </div>
+             -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="/src/script.js"></script>
   </body>
 </html>
