@@ -348,6 +348,17 @@ const classmates = [
     contactlink:
       "https://wa.me/237695703061?text=Hello%20I%20want%20to%20contact%20you",
   },
+    {
+    img: "https://res.cloudinary.com/dlhevtzle/image/upload/v1760139760/gg1iojdu1erk61sd3mlb.jpg",
+    name: "Gre Gre",
+    paragraph:
+      "That lady if food get finish in cameroon should will provide for me. Decided to chase her dream and badly pationated with what she does. Wishing you the best",
+    span: 'Dimitris stopam',
+    age: 20,
+    location: "Unknown",
+    contactlink:
+      "https://wa.me/237695703061?text=Hello%20I%20want%20to%20contact%20you",
+  },
   // Add more sample classmates if you'd like
 ];
 
