@@ -9,7 +9,7 @@
 :root {
   --primary: black;
   --bg-color: #ffffff;
-    --shadow: rgba(0,0,0,0.3);
+  --shadow: rgba(0,0,0,0.3);
 }
 .dark-mode {
   --bg-color: #181818;

@@ -343,11 +343,14 @@
     border-style: var(--tw-border-style);
     border-width: 2px;
   }
+  .bg-\[var\(--bg-\)\] {
+    background-color: var(--bg-);
+  }
+  .bg-\[var\(--bg-c\)\] {
+    background-color: var(--bg-c);
+  }
   .bg-\[var\(--bg-color\)\] {
     background-color: var(--bg-color);
-  }
-  .bg-white {
-    background-color: var(--color-white);
   }
   .bg-\[url\(\'https\:\/\/res\.cloudinary\.com\/dlhevtzle\/image\/upload\/v1760139674\/rp8jxqkv78rwzqr6nitv\.jpg\'\)\] {
     background-image: url('https://res.cloudinary.com/dlhevtzle/image/upload/v1760139674/rp8jxqkv78rwzqr6nitv.jpg');
@@ -389,13 +392,18 @@
     font-size: var(--text-7xl);
     line-height: var(--tw-leading, var(--text-7xl--line-height));
   }
-  .text-9xl {
-    font-size: var(--text-9xl);
-    line-height: var(--tw-leading, var(--text-9xl--line-height));
-  }
   .text-xl {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-\[10px\] {
+    font-size: 10px;
+  }
+  .text-\[15px\] {
+    font-size: 15px;
+  }
+  .text-\[20px\] {
+    font-size: 20px;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -489,12 +497,6 @@
   .sm\:hidden {
     @media (width >= 40rem) {
       display: none;
-    }
-  }
-  .sm\:text-7xl {
-    @media (width >= 40rem) {
-      font-size: var(--text-7xl);
-      line-height: var(--tw-leading, var(--text-7xl--line-height));
     }
   }
   .sm\:text-9xl {

@@ -468,7 +468,7 @@ searchInput.addEventListener("input", () => {
   const found = classmates.find((c) => c.name.toLowerCase().includes(query));
   if (found) {
     resultContainer.innerHTML = `
-      <div class="max-w-xl border p-4 rounded shadow-lg flex flex-col md:flex-row gap-4 bg-white">
+      <div class="max-w-xl border p-4 rounded shadow-lg flex flex-col md:flex-row gap-4 bg-[var(--bg-color)] text-[var(--primary)]">
          <img src="${found.img}" class="w-40 h-40 object-cover rounded" />
          <div>
             <h2 class="text-2xl font-bold mb-2">${found.name}</h2>
