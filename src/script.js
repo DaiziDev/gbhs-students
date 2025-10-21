@@ -4,6 +4,7 @@ const nav = document.querySelector(".small-screen");
 const darkmood = document.querySelector(".dark-mood");
 const moon = document.querySelector(".fa-moon");
 const html = document.querySelector("html");
+const navLinks = document.querySelectorAll('.small-screen a')
 
 menu.addEventListener("click", function () {
   if (toggle.classList.contains("fa-bars")) {
@@ -17,6 +18,18 @@ menu.addEventListener("click", function () {
     nav.classList.add("hidden");
     nav.classList.remove("nav-animation");
   }
+});
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    // Check if menu is open
+    if (!nav.classList.contains('hidden')) {
+      // Close the menu
+      toggle.classList.remove("fa-xmark");
+      toggle.classList.add("fa-bars");
+      nav.classList.add("hidden");
+      nav.classList.remove("nav-animation");
+    }
+  });
 });
 darkmood.addEventListener("click", function () {
   if (moon.classList.contains("fa-moon")) {
@@ -348,12 +361,12 @@ const classmates = [
     contactlink:
       "https://wa.me/237695703061?text=Hello%20I%20want%20to%20contact%20you",
   },
-    {
+  {
     img: "https://res.cloudinary.com/dlhevtzle/image/upload/v1760139760/gg1iojdu1erk61sd3mlb.jpg",
     name: "Gre Gre",
     paragraph:
       "That lady if food get finish in cameroon should will provide for me. Decided to chase her dream and badly pationated with what she does. Wishing you the best",
-    span: 'Dimitris stopam',
+    span: "Ps: Dimitris stopam",
     age: 20,
     location: "Unknown",
     contactlink:
@@ -441,18 +454,18 @@ classmates.forEach((person) => {
   container.appendChild(classmateDiv);
 });
 
-// search engine 
+// search engine
 const searchInput = document.getElementById("searchInput");
 const resultContainer = document.getElementById("resultContainer");
 
-searchInput.addEventListener('input', () => {
+searchInput.addEventListener("input", () => {
   const query = searchInput.value.toLowerCase().trim();
-  resultContainer.innerHTML = " "
+  resultContainer.innerHTML = " ";
 
-  if (query === '') {
-    return; 
+  if (query === "") {
+    return;
   }
-  const found = classmates.find(c => c.name.toLowerCase().includes(query));
+  const found = classmates.find((c) => c.name.toLowerCase().includes(query));
   if (found) {
     resultContainer.innerHTML = `
       <div class="max-w-xl border p-4 rounded shadow-lg flex flex-col md:flex-row gap-4 bg-white">
