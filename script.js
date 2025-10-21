@@ -438,7 +438,7 @@ classmates.forEach((person) => {
   contactLink.href = person.contactlink;
   contactLink.target = "_blank";
   contactLink.rel = "noopener noreferrer";
-  contactLink.textContent = "Contact";
+  contactLink.textContent = "Contact Her";
 
   // Assemble the inner box
   boxDiv.appendChild(imgContainer);
