@@ -485,6 +485,14 @@
   font-optical-sizing: auto;
   scroll-behavior: smooth;
 }
+html, body {
+  transition: all 2s ease;
+}
+body {
+  background: var(--bg-color);
+  color: var(--primary);
+  box-shadow: 0 4px 6px var(--shadow);
+}
 :root {
   --primary: black;
   --bg-color: #ffffff;
@@ -494,6 +502,11 @@
   --bg-color: #181818;
   --primary: white;
   --shadow: rgba(189, 189, 189, 0.3);
+}
+.naving {
+  background-color: var(--bg-color);
+  color: var(--primary);
+  transition: all 2s ease;
 }
 .nav-animation {
   position: absolute;
@@ -562,6 +575,10 @@
 .hero button:hover::after {
   width: 110%;
 }
+#classmates {
+  background-color: var(--bg-color);
+  transition: background-color 2s ease;
+}
 #classmates-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -569,12 +586,14 @@
   gap: 2rem;
   justify-content: center;
   padding: 1rem;
+  background-color: var(--bg-color);
+  transition: background-color 2s ease;
 }
 .classmate {
   border-radius: 8px;
   padding: 1rem;
   box-shadow: 2px 2px 5px var(--shadow);
-  transition: all 0.3s ease-in-out;
+  transition: all 2s;
   animation: fadeInUp 0.5s forwards;
 }
 .classmate:hover {

@@ -401,10 +401,8 @@ const classmates = [
   },
   // Add more sample classmates if you'd like
 ];
-
 // Select the container
 const container = document.getElementById("classmates-container");
-
 // Generate and insert classmates
 classmates.forEach((person) => {
   // Create main classmate div
