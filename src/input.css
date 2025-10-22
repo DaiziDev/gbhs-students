@@ -126,12 +126,26 @@
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: 1rem;
+  transition: all 1s ease;
+  cursor: pointer;
 }
+.img-container:hover{
+  transition: all 1s ease;
+  overflow: visible;
+  height: 100%;
+  width: 100%;
+}
+
 .classmate-img {
   height: 100%;
   width: 100%;
   object-position: top;
   object-fit: cover;
+  transition: all 1s ease;
+}
+.img-container:hover .classmate-img{
+  transition: all 1s ease;
+  object-fit: fill;
 }
 
 .classmate-name {
@@ -163,6 +177,22 @@
   border-radius: 10px;
   margin-top: 10px;
   padding: 5px 20px 5px 20px;
+}
+/* Search css */
+.suggestion-container{
+  border: 1px solid #ccc;
+  max-height: 150px;
+  overflow-y: auto;
+  position: absolute;
+  background-color: var(--bg-color);
+  width: calc(100% - 2px);
+  z-index: 1000;
+}
+.suggestion-item{
+  padding: 8px;
+}
+.suggestion-item:hover{
+  background-color: #f0f0f0;
 }
 
 @media (min-width: 10px) and (max-width: 500px){
