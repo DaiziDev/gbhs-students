@@ -17,7 +17,10 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <title>GBHS-Classmates</title>
   </head>
   <body>
@@ -44,7 +47,7 @@
                 <a href="#teachers">Teachers</a>
               </li>
               <li class="nav-li">
-                <a href="about">About</a>
+                <a href="#about">About</a>
               </li>
             </ul>
           </nav>
@@ -61,7 +64,7 @@
                 <a href="#teachers">Teachers</a>
               </li>
               <li class="nav-li">
-                <a href="about">About</a>
+                <a href="#about">About</a>
               </li>
             </ul>
           </nav>
@@ -82,7 +85,7 @@
         </div>
       </div>
     </section>
-    <!-- End of the navbar -->
+    <!-- Hero Section -->
     <section class="hero flex items-center justify-center w-full">
       <div
         class="w-[98%] bg-[url('https://res.cloudinary.com/dlhevtzle/image/upload/v1760139674/rp8jxqkv78rwzqr6nitv.jpg')] bg-center bg-no-repeat bg-cover h-[calc(100vh-80px)] flex flex-col items-center justify-center text-center"
@@ -99,7 +102,7 @@
         </div>
       </div>
     </section>
-    <!-- End of the hero section-->
+    <!-- Classmates section-->
     <section
       id="classmates"
       class="w-full flex fle-col items-center justify-center bg-[var(--bg-color)] text-[var(--primary)]"
@@ -130,20 +133,91 @@
         <div class="flex flex-col items-center justify-center">
           <div
             id="classmates-container"
-            class="classmateC my-8 w-full flex items-center justify-center"
+            class="swiper-wrapper my-8 w-full flex items-center justify-center"
           ></div>
         </div>
       </div>
     </section>
-    <!-- End of the classmates section-->
+    <!-- Teachers section-->
     <section
       id="teachers"
-      class="w-full flex fle-col items-center justify-center bg-[var(--bg-color)] text-[var(--primary)]"
+      class="w-full h-50 text-center flex fle-col items-center justify-center bg-[var(--bg-color)] text-[var(--primary)] transition-all duration-[2s]"
     >
       Teachers Section Comming Soon When I Will Have Pictures
     </section>
+    <!-- About Section-->
+    <section
+      id="about"
+      class="w-full h-[100vh] text-center flex flex-col sm:flex-row items-center justify-center text-[var(--primary)] transition-all duration-[2s]"
+    >
+      <div
+        class="one text-[20px] sm:text-xl h-[50%] w-full sm:h-[100%] sm:w-[50%] flex flex-col items-center justify-center"
+      >
+        <h1 class="text-xl sm:text-5xl font-bold text-center">About</h1>
+        <h2 class="text-xl sm:text-3xl font-bold text-center md:my-6">
+          Goverment Bilingual High School Koutaba
+        </h2>
+        <div class="w-[90%] text-start">
+        <p class="my-4">
+          GBHS-KOUTABA is a vibrant and dynamic school dedicated to fostering
+          academic excellence and personal growth. The school caters to a wide
+          range of academic interests,
+        </p>
+        <p class="my-4">
+          It uniquely offers both a francophone session, accommodating students
+          from 6ème to Terminale, and an anglophone session from Form 1 to Upper
+          Sixth, providing a bilingual environment that promotes cultural
+          diversity and linguistic proficiency.
+        </p>
+        <p class="my-4 hidden sm:hidden md:flex">
+          Including a both arts and sciences course, ensuring students receive a
+          well-rounded education. Facilities at GBHS-KOUTABA are top-notch,
+          featuring a modern laboratory equipped for scientific experiments and
+          research, as well as a well-equipped computer lab that supports
+          digital learning and technological skills.
+        </p>
+        <p class="my-4 hidden sm:hidden md:hidden lg:flex">
+          The school also boasts expansive sports facilities, including a large
+          football and handball field, encouraging students to stay active,
+          develop teamwork, and enjoy a healthy lifestyle. Overall, GBHS-KOUTABA
+          is a nurturing educational community dedicated to shaping the future
+          leaders of tomorrow through quality education and comprehensive
+          extracurricular activities.
+        </p>
+        </div>
+      </div>
+      <div class="two flex flex-col items-center justify-center h-[50%] w-full sm:h-[100%] sm:w-[50%]">
+        <div class="swiper">
+           <div class="swiper-wrapper">
+             <div class="swiper-slide"><img src="https://res.cloudinary.com/dlhevtzle/image/upload/v1761168211/lyc%C3%A9e2_dk7quy.jpg" alt=""></div>
+             <div class="swiper-slide"><img src="https://res.cloudinary.com/dlhevtzle/image/upload/v1761148625/vmw8l5pst3jg1wcpddyf.jpg" alt=""></div>
+             <div class="swiper-slide"><img src="https://res.cloudinary.com/dlhevtzle/image/upload/v1761148625/vmw8l5pst3jg1wcpddyf.jpg" alt=""></div>
+             <div class="swiper-slide">
+               <img src="https://res.cloudinary.com/dlhevtzle/image/upload/v1760139710/znivzkuwwqxj46psdayr.jpg" alt="">
+             </div>
+             <div class="swiper-slide">
+               <img src="https://res.cloudinary.com/dlhevtzle/image/upload/v1760139715/q0rubmlvceyvtfo7p9fe.jpg" alt="">
+             </div>
+             <div class="swiper-slide">
+               <img src="https://res.cloudinary.com/dlhevtzle/image/upload/v1760139703/lxucnpjo86vnlrgyudul.jpg" alt="">
+             </div>
+             <div class="swiper-slide">
+               <img src="https://res.cloudinary.com/dlhevtzle/image/upload/v1760139660/vsf3bquaooo8bftqoc3m.jpg" alt="">
+             </div>
+           </div>
+           <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Navigation button -->
+             <div class="swiper-button-pre"></div>
+             <div class="swiper-button-next"></div>
+             <!-- Scroll bar -->
+              <div class="swipper-scrollbar"></div>
+        </div>
+        <h2 class="font-black text-3xl mt-3">Enjoy The Experience</h2>
+      </div>
+    </section>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

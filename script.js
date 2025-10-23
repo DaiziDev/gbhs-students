@@ -478,12 +478,10 @@ classmates.forEach((person) => {
   // Append to container
   container.appendChild(classmateDiv);
 });
-
 // search engine
 const searchInput = document.getElementById("searchInput");
 const resultContainer = document.getElementById("resultContainer");
 const suggestionContainer = document.getElementById("suggestion")
-
 //function to show suggestion
 function showSuggestions(matches) {
   suggestionContainer.innerHTML = "";
@@ -533,3 +531,21 @@ searchInput.addEventListener("input", () => {
     resultContainer.innerHTML = `<p class="text-center text-gray-600">No classmate found with that name.</p>`;
   }
 });
+
+//Swipper js
+
+const swiper = new Swiper('.swiper', {
+  direction: 'horizontal',
+  loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+
+})
