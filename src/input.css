@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Aquarium';
+  src: url(/public/AQUARIUM.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 *{
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -29,7 +37,17 @@ body{
   background-color:var(--bg-color);
   color: var(--primary);
   transition: all 2s ease;
-
+}
+.naving .logo a{
+  font-family: 'Aquarium';
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.naving .logo:hover{
+  scale: 1.1;
+}
+.hero .text{
+  font-family: 'Aquarium';
 }
 .nav-animation {
   position: absolute;
